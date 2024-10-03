@@ -1,0 +1,77 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F3F8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  background-color: #DEECFF;
+  padding: 20px;
+  border: 2px solid #C6CFFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+/* Título */
+#title {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a imagem */
+#img-div {
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #C6CFFF;
+  margin: 0 auto;
+}
+
+#img-caption {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Estilos para a seção de informações */
+#tribute-info h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#tribute-info p {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Estilos para o link no rodapé */
+#tribute-link {
+  display: inline-block;
+  background-color: #E8D3FF;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #C6CFFF;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#tribute-link:hover {
+  background-color: #C6CFFF;
+  color: #F3F8FF;
+}

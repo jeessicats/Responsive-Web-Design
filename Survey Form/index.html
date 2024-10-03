@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Configurações essenciais do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+    <!-- Link para o arquivo de estilos (CSS) -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <!-- Título da página com o ID 'title' conforme a user story -->
+      <h1 id="title">Survey Form</h1>
+      
+      <!-- Descrição curta do formulário com o ID 'description' -->
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      
+      <!-- Início do formulário com o ID 'survey-form' -->
+      <form id="survey-form">
+        
+        <!-- Campo para o nome com o rótulo correspondente e input obrigatório -->
+        <label id="name-label">Name: 
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </label>
+        
+        <!-- Campo para o e-mail com validação HTML5 e rótulo correspondente -->
+        <label id="email-label">E-mail: 
+          <input id="email" type="email" name="email" placeholder="Your Email Address" required>
+        </label>
+        
+        <!-- Campo para a idade com restrições (min e max) e validação HTML5 -->
+        <label id="number-label">Age: 
+          <input id="number" type="number" name="number" min="15" max="120" placeholder="Your Age" required>
+        </label>
+
+        <!-- Dropdown com ID 'dropdown', conforme a user story -->
+        <label>Which option best describes your current role? 
+          <select id="dropdown" required>
+            <option value="">Select your role</option> <!-- Opção padrão vazia -->
+            <option value="1">Student</option> <!-- Opções específicas -->
+            <option value="2">Full Time Job</option>
+            <option value="3">Part Time Job</option>
+          </select>
+        </label>
+
+        <!-- Agrupamento de radio buttons dentro de um fieldset para organizar a questão -->
+        <fieldset>
+          <legend>Would you recommend our product to a friend?</legend>
+          
+          <!-- Cada radio button tem um valor único e está associado ao mesmo grupo de opções -->
+          <label for="definitely">Definitely
+            <input value="1" id="definitely" type="radio" name="options" class="inline" checked />
+          </label>
+          
+          <label for="maybe">Maybe
+            <input value="2" id="maybe" type="radio" name="options" class="inline" />
+          </label>
+          
+          <label for="not-sure">Not Sure
+            <input value="3" id="not-sure" type="radio" name="options" class="inline" />
+          </label>
+        </fieldset>
+
+        <!-- Outro agrupamento de checkboxes dentro de um fieldset para selecionar múltiplas opções -->
+        <fieldset>
+          <legend>What do you like most about our product? (Choose all that apply)</legend>
+          
+          <!-- Cada checkbox tem seu próprio valor único -->
+          <label>
+            <input type="checkbox" name="feature" value="design">
+            Design
+          </label>
+          
+          <label>
+            <input type="checkbox" name="feature" value="performance">
+            Performance
+          </label>
+          
+          <label>
+            <input type="checkbox" name="feature" value="support">
+            Customer Support
+          </label>
+        </fieldset>
+
+        <!-- Área de texto para comentários adicionais -->
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        </label>
+
+        <!-- Botão de envio do formulário -->
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

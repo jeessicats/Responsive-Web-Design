@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="./styles.css">
+ </head>
+ <body>
+
+  <!-- Div para a Navbar -->
+  <div id="navbar-container">
+     <nav id="navbar">
+    <header><h1>CSS Documentation</h1></header>
+    <ul>
+        <li><a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a></li>
+        <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a></li>
+        <li><a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a></li>
+        <li><a class="nav-link" href="#CSS_Media_Queries">CSS Media Queries</a></li>
+      </ul>
+  </nav>
+  </div>
+
+  <!-- Div para o Conteúdo Principal -->
+  <div id="content-container">
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_CSS">
+        <header>Introduction to CSS</header>
+        <p>CSS (Cascading Style Sheets) is a language used to describe the presentation of a webpage written in HTML. While HTML provides the structure and content, CSS is responsible for the design, layout, colors, fonts, and overall visual appearance of a webpage. With CSS, developers can control how web pages are displayed across different devices, screens, and platforms.</p>
+        <p>CSS can be applied to an HTML document in three ways:</p>
+        <ul>
+          <li>Inline CSS: Applied directly to HTML elements using the <code>style</code> attribute.</li>
+          <li>Internal CSS: Written inside a <code>style</code> tag within the <code>head</code> section of the HTML.</li>
+          <li>External CSS: Linked via an external file using a <code>link</code> tag, which is the most common method.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="CSS_Selectors">
+        <header>CSS Selectors</header>
+        <p>Selectors are used in CSS to target specific HTML elements and apply styles to them. There are various types of selectors, each allowing developers to target elements in different ways:</p>
+        <ul>
+          <li>Element Selector: Targets all instances of a particular HTML element.</li>
+          <li>Class Selector: Targets elements that have a specific class attribute. Classes can be reused across multiple elements.</li>
+          <li>ID Selector: Targets an element with a specific ID. IDs are unique and should be used only once per page.</li>
+          <li>Universal Selector: Targets all elements on the page.</li>
+        </ul>
+        <p>Other selectors include attribute selectors, grouping selectors, and pseudo-classes.</p>
+      </section>
+      <section class="main-section" id="CSS_Box_Model">
+        <header>CSS Box Model</header>
+        <p>The CSS Box Model is a key concept for understanding how elements are displayed on a web page. Every HTML element is represented as a rectangular box, which consists of several layers:</p>
+        <ul>
+          <li>Content: The actual content inside the element (text, images, etc.).</li>
+          <li>Padding: The space between the content and the element's border.</li>
+          <li>Border: A line surrounding the padding and content (optional).</li>
+          <li>Margin: The space outside the border, separating the element from others.</li>
+        </ul>
+        <p>This is how the box model works:</p>
+        <ul>
+          <li>The width and height of the element determine the size of the content box.</li>
+          <li>Padding increases the size of the element by adding space inside the border.</li>
+          <li>The border is drawn around the padding.</li>
+          <li>The margin separates the element from other elements.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="CSS_Flexbox">
+        <header>CSS Flexbox</header>
+        <p>CSS Flexbox is a layout model that simplifies the arrangement of elements in a container, making it easier to create flexible and responsive layouts. Flexbox is particularly useful for designing layouts where items need to be distributed evenly or aligned along a particular axis.</p>
+        <p>Flexbox works by applying the <code>display: flex;</code> property to a container, turning it into a flex container. The direct children of this container become flex items, which can be positioned and aligned in various ways using flexbox properties.</p>
+        <p>Some key Flexbox properties include:</p>
+        <ul>
+          <li>flex-direction: Determines the direction in which flex items are laid out (row, column, etc.).</li>
+          <li>justify-content: Controls how flex items are aligned horizontally (left, right, center, spaced evenly, etc.).</li>
+          <li>align-items: Controls how flex items are aligned vertically.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="CSS_Media_Queries">
+        <header>CSS Media Queries</header>
+        <p>Media Queries are a feature in CSS that allow styles to be applied based on the characteristics of the user's device or browser window, such as screen size, orientation, or resolution. Media queries are essential for responsive design, which ensures that websites work well on all devices, from mobile phones to large desktop screens.</p>
+        <p>A media query consists of a condition and a set of styles to apply if that condition is true. For example, you might want to change the layout of a page when the screen width is less than 600 pixels.</p>
+        <p>In this example, if the screen width is 600px or smaller, the background color of the page will be light blue. Some common conditions used in media queries include:</p>
+        <ul>
+          <li>max-width: Apply styles to screens smaller than a specific width.
+</li>
+          <li>min-width: Apply styles to screens larger than a specific width.
+</li>
+          <li>orientation: Apply styles based on the device's orientation (portrait or landscape).
+</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+    
+ </body>
+ </html>

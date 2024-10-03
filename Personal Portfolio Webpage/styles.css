@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #DDE6ED; /* Cor de fundo principal */
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #27374D; /* Cor da barra de navegação */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  #navbar ul {
+    list-style: none;
+  }
+  
+  #navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  #navbar ul li a {
+    color: #DDE6ED; /* Cor dos links da navbar */
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #navbar ul li a:hover {
+    color: #9DB2BF; /* Cor hover dos links */
+  }
+  
+  /* Welcome Section */
+  #welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9DB2BF; /* Cor de fundo da seção de boas-vindas */
+    color: #27374D; /* Cor do texto */
+    text-align: center;
+  }
+  
+  #welcome-section h1 {
+    font-size: 4rem;
+    color: #27374D; /* Cor do título */
+  }
+  
+  #welcome-section h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #526D82; /* Cor do subtítulo */
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 20px;
+    background-color: #DDE6ED; /* Cor de fundo da seção "about" */
+    text-align: center;
+  }
+  
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #27374D; /* Cor do texto */
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 20px;
+    background-color: #DDE6ED; /* Cor de fundo */
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #27374D; /* Cor dos títulos */
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-tile {
+    width: 30%;
+    background-color: #ffffff; /* Cor de fundo dos projetos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .project-tile img {
+    max-width: 100%;
+  }
+  
+  .project-tile p {
+    margin-top: 10px;
+    color: #27374D; /* Cor do texto do projeto */
+  }
+  
+  /* Footer - Profile Links */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #27374D; /* Cor de fundo do rodapé */
+    color: #DDE6ED; /* Cor do texto */
+  }
+  
+  .profile-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #526D82; /* Cor dos links do rodapé */
+  }
+  
+  .profile-link:hover {
+    color: #DDE6ED; /* Cor hover dos links no rodapé */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .project-tile {
+      width: 90%;
+    }
+  }

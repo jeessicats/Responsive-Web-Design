@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo global */
+  body {
+    font-family: "Helvetica", Arial, sans-serif;
+    color: #333;
+    background-color: #F4F4F2;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas para melhor legibilidade */
+  }
+  
+  /* Navbar fixa */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #BBBFCA;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  #navbar header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #495464;
+    text-align: left; /* Centraliza o texto */
+    margin-bottom: 25px;
+    background-color: #EDDFE0; /* Altere para a cor de fundo desejada */
+    padding: 15px;
+    border-radius: 5px; /* Arredonda as bordas para melhorar a simetria */
+  }
+  
+  #navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+  
+  #navbar ul li {
+    margin-bottom: 15px; /* Mais espaçamento entre os itens do menu */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #495464;
+    font-size: 1.0rem;
+    padding: 10px 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Bordas arredondadas sutis */
+    margin: 0;
+  }
+  
+  .nav-link:hover {
+    background-color: #EDDFE0;
+    color: #495464;
+  }
+  
+  /* Conteúdo principal */
+  #content-container {
+    margin-left: 250px; /* Deixa espaço para a navbar fixa */
+    padding: 50px; /* Mais espaçamento ao redor do conteúdo */
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  main section {
+    margin-bottom: 50px; /* Mais espaçamento entre as seções */
+  }
+  
+  main header {
+    font-size: 1.5rem; /* Tamanho da fonte maior para os títulos */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #BBBFCA;
+    padding-bottom: 10px;
+  }
+  
+  /* Estilo dos parágrafos e listas */
+  p {
+    margin-bottom: 20px;
+    font-size: 1.0rem; /* Fonte ligeiramente maior */
+    color: #333;
+  }
+  
+  ul {
+    margin-left: 20px;
+    font-size: 1.0rem; /* Deixa as listas um pouco maiores também */
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Mais espaçamento entre itens da lista */
+  }
+  
+  /* Links dentro do conteúdo */
+  code {
+    background-color: #E8E8E8;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    #content-container {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
